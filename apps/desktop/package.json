@@ -1,0 +1,21 @@
+{
+  "name": "@trial/desktop",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "lint": "eslint .",
+    "format:check": "prettier --check . --ignore-path ../../.gitignore",
+    "test": "vitest run --root . --config ../../vitest.config.ts",
+    "build": "esbuild src/main.ts --bundle --platform=node --format=cjs --target=node24 --external:electron --outfile=dist/main.cjs",
+    "start": "electron dist/main.cjs"
+  },
+  "dependencies": {
+    "@trial/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "catalog:",
+    "@types/node": "24.19.0",
+    "electron": "44.4.4"
+  }
+}

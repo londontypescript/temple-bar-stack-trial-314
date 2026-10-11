@@ -1,0 +1,11 @@
+{
+  "singleQuote": true,
+  "overrides": [
+    {
+      "files": "pnpm-lock.yaml",
+      "options": {
+        "printWidth": 200
+      }
+    }
+  ]
+}

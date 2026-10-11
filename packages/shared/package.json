@@ -1,0 +1,16 @@
+{
+  "name": "@trial/shared",
+  "private": true,
+  "type": "module",
+  "exports": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "lint": "eslint .",
+    "format:check": "prettier --check . --ignore-path ../../.gitignore",
+    "test": "vitest run --root . --config ../../vitest.config.ts"
+  },
+  "devDependencies": {
+    "typescript": "catalog:",
+    "@types/node": "24.19.0"
+  }
+}

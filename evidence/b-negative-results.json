@@ -1,0 +1,41 @@
+[
+  {
+    "case": "typecheck",
+    "command": "pnpm --filter @trial/shared typecheck",
+    "exit": 2,
+    "responsibleDiagnostic": "TS2322",
+    "diagnosticObserved": true,
+    "restored": true
+  },
+  {
+    "case": "lint",
+    "command": "pnpm --filter @trial/shared lint",
+    "exit": 1,
+    "responsibleDiagnostic": "@typescript-eslint/no-unused-vars",
+    "diagnosticObserved": true,
+    "restored": true
+  },
+  {
+    "case": "format",
+    "command": "pnpm --filter @trial/shared format:check",
+    "exit": 1,
+    "responsibleDiagnostic": "Code style issues",
+    "diagnosticObserved": true,
+    "restored": true
+  },
+  {
+    "case": "behavior",
+    "command": "pnpm --filter @trial/shared test",
+    "exit": 1,
+    "responsibleDiagnostic": "AssertionError",
+    "diagnosticObserved": true,
+    "restored": true
+  },
+  {
+    "case": "installed React/React DOM mismatch diagnostic",
+    "input": "mocked dependency metadata only; installed packages/store unchanged",
+    "exit": 1,
+    "responsibleDiagnostic": "AssertionError: expected 19.3.0 to be 19.2.8",
+    "restored": true
+  }
+]
