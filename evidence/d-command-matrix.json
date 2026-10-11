@@ -1,0 +1,69 @@
+[
+  {
+    "case": "d-normal-launcher",
+    "command": "pnpm",
+    "args": ["create", "@londontypescript/temple-bar@0.0.10"],
+    "exit": 1,
+    "signal": null,
+    "investigatorNode": "v24.21.0"
+  },
+  {
+    "case": "d-reference-add",
+    "command": "pnpm",
+    "args": [
+      "add",
+      "-Dw",
+      "--save-exact",
+      "@londontypescript/temple-bar@0.0.10"
+    ],
+    "exit": 0,
+    "signal": null,
+    "investigatorNode": "v24.21.0"
+  },
+  {
+    "case": "d-reference-frozen-install",
+    "command": "pnpm",
+    "args": ["install", "--frozen-lockfile"],
+    "exit": 0,
+    "signal": null,
+    "investigatorNode": "v24.21.0"
+  },
+  {
+    "case": "d-full-check",
+    "command": "pnpm",
+    "args": ["check"],
+    "exit": 0,
+    "signal": null,
+    "investigatorNode": "v24.21.0"
+  },
+  {
+    "case": "d-smoke-build",
+    "command": "pnpm",
+    "args": ["build"],
+    "exit": 0,
+    "signal": null,
+    "investigatorNode": "v24.21.0"
+  },
+  {
+    "case": "d-initial-gate",
+    "command": "pnpm",
+    "args": ["gate"],
+    "exit": 0,
+    "signal": null,
+    "investigatorNode": "v24.21.0"
+  },
+  {
+    "case": "d-restored-smoke",
+    "command": "pnpm",
+    "args": ["smoke"],
+    "exit": 0,
+    "signal": null,
+    "investigatorNode": "v24.21.0"
+  },
+  {
+    "case": "d-reference-init",
+    "command": "pnpm",
+    "args": ["exec", "temple-bar", "init", "--create-ruleset"],
+    "exit": 0
+  }
+]

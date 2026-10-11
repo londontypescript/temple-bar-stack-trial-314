@@ -1,0 +1,58 @@
+[
+  {
+    "case": "d-probe-web-text",
+    "command": ["pnpm", "smoke", "--web-only"],
+    "exit": 1,
+    "signal": null,
+    "restored": true,
+    "diagnostic": "expect(locator).toBeVisible() failed: shared heading absent"
+  },
+  {
+    "case": "d-probe-scene-geometry",
+    "command": ["pnpm", "smoke", "--scene-only"],
+    "exit": 1,
+    "signal": null,
+    "restored": true,
+    "diagnostic": "expect(canvas).toHaveAttribute failed: expected 1.5, received 2.5"
+  },
+  {
+    "case": "d-probe-ink-text",
+    "command": ["pnpm", "smoke", "--terminal-only"],
+    "exit": 1,
+    "signal": null,
+    "restored": true,
+    "diagnostic": "AssertionError: Ink shared output missing"
+  },
+  {
+    "case": "d-probe-electron-main",
+    "command": ["pnpm", "smoke", "--desktop-only"],
+    "exit": 1,
+    "signal": null,
+    "restored": true,
+    "diagnostic": "AssertionError: main window title Missing shared value != Shared TypeScript: 314"
+  },
+  {
+    "case": "d-probe-electron-renderer",
+    "command": ["pnpm", "smoke", "--desktop-only"],
+    "exit": 1,
+    "signal": null,
+    "restored": true,
+    "diagnostic": "expect(locator).toBeVisible() failed after missing renderer module"
+  },
+  {
+    "case": "d-probe-vite-startup",
+    "command": ["pnpm", "smoke", "--web-only"],
+    "exit": 1,
+    "signal": null,
+    "restored": true,
+    "diagnostic": "AssertionError: Vite exited: UNRESOLVED_IMPORT ./missing-startup-module"
+  },
+  {
+    "case": "d-probe-ink-timeout",
+    "command": ["pnpm", "smoke", "--terminal-only"],
+    "exit": 1,
+    "signal": null,
+    "diagnostic": "AssertionError: Ink exit timeout",
+    "restored": true
+  }
+]

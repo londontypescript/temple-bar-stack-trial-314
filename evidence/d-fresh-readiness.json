@@ -1,0 +1,46 @@
+{
+  "baselineCommit": "4eeda09598f545051a5dd11573525b791acf37e4",
+  "freshPostCheckout": {
+    "exit": 0,
+    "installCommand": "pnpm install --frozen-lockfile",
+    "pnpm": "10.34.5",
+    "prepare": "five shared hooks unchanged"
+  },
+  "loopbackPortsReleased": [4311, 4312, 4313, 4314],
+  "commands": [
+    {
+      "case": "d-ready",
+      "command": "pnpm",
+      "args": ["exec", "temple-bar", "ready"],
+      "exit": 0,
+      "signal": null,
+      "investigatorNode": "v24.21.0"
+    },
+    {
+      "case": "d-fresh-gate",
+      "command": "pnpm",
+      "args": ["gate"],
+      "exit": 0,
+      "signal": null,
+      "investigatorNode": "v24.21.0"
+    },
+    {
+      "case": "d-fresh-build",
+      "command": "pnpm",
+      "args": ["build"],
+      "exit": 0,
+      "signal": null,
+      "investigatorNode": "v24.21.0"
+    },
+    {
+      "case": "d-restored-terminal",
+      "command": "pnpm",
+      "args": ["smoke", "--terminal-only"],
+      "exit": 0,
+      "signal": null,
+      "investigatorNode": "v24.21.0"
+    }
+  ],
+  "ci": "not yet seen",
+  "completeProtection": "awaits approved bootstrap, default CodeQL and final init"
+}

@@ -29,6 +29,10 @@ void app
         sandbox: true,
       },
     });
+    // Preserve the main-process shared value when the renderer sets its title.
+    window.on('page-title-updated', (event) => {
+      event.preventDefault();
+    });
     await window.loadURL('app://fixture/');
   })
   .catch((error: unknown) => {

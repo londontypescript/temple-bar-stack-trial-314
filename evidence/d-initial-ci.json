@@ -1,0 +1,54 @@
+{
+  "statusCheckRollup": [
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-11T09:34:28Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/londontypescript/temple-bar-stack-trial-314/actions/runs/38128791308/job/114438614983",
+      "name": "stack compatibility (ubuntu-latest)",
+      "startedAt": "2026-10-11T09:33:29Z",
+      "status": "COMPLETED",
+      "workflowName": "stack compatibility"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-11T09:34:31Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/londontypescript/temple-bar-stack-trial-314/actions/runs/38128791299/job/114438615104",
+      "name": "temple-bar gate",
+      "startedAt": "2026-10-11T09:33:29Z",
+      "status": "COMPLETED",
+      "workflowName": "temple-bar gate"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-11T09:33:43Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/londontypescript/temple-bar-stack-trial-314/actions/runs/38128791306/job/114438615797",
+      "name": "temple-bar pr-title",
+      "startedAt": "2026-10-11T09:33:28Z",
+      "status": "COMPLETED",
+      "workflowName": "temple-bar pr-title"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-11T09:34:59Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/londontypescript/temple-bar-stack-trial-314/actions/runs/38128791308/job/114438615033",
+      "name": "stack compatibility (macos-latest)",
+      "startedAt": "2026-10-11T09:33:36Z",
+      "status": "COMPLETED",
+      "workflowName": "stack compatibility"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-11T09:35:18Z",
+      "conclusion": "FAILURE",
+      "detailsUrl": "https://github.com/londontypescript/temple-bar-stack-trial-314/actions/runs/38128791308/job/114438614858",
+      "name": "stack compatibility (windows-latest)",
+      "startedAt": "2026-10-11T09:33:29Z",
+      "status": "COMPLETED",
+      "workflowName": "stack compatibility"
+    }
+  ]
+}
