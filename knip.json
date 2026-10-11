@@ -1,0 +1,9 @@
+{
+  "workspaces": {
+    ".": {
+      "vitest": {
+        "config": ["vitest.config.ts", "vitest.root.config.ts"]
+      }
+    }
+  }
+}

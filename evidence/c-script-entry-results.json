@@ -1,0 +1,75 @@
+[
+  {
+    "case": "terminal-nonconventional-with-script",
+    "exit": 0,
+    "report": {
+      "issues": []
+    },
+    "restored": true
+  },
+  {
+    "case": "terminal-nonconventional-without-script",
+    "exit": 1,
+    "report": {
+      "issues": [
+        {
+          "file": "apps/terminal/src/launch.tsx",
+          "exports": [],
+          "files": [
+            {
+              "name": "apps/terminal/src/launch.tsx"
+            }
+          ],
+          "types": []
+        }
+      ]
+    },
+    "restored": true
+  },
+  {
+    "case": "desktop-nonconventional-with-script",
+    "exit": 1,
+    "report": {
+      "issues": [
+        {
+          "file": "apps/desktop/src/host.ts",
+          "exports": [],
+          "files": [
+            {
+              "name": "apps/desktop/src/host.ts"
+            }
+          ],
+          "types": []
+        }
+      ]
+    },
+    "restored": true
+  },
+  {
+    "case": "desktop-nonconventional-without-script",
+    "exit": 1,
+    "report": {
+      "issues": [
+        {
+          "file": "apps/desktop/src/host.ts",
+          "exports": [],
+          "files": [
+            {
+              "name": "apps/desktop/src/host.ts"
+            }
+          ],
+          "types": []
+        }
+      ]
+    },
+    "restored": true
+  },
+  {
+    "case": "desktop-nonconventional-explicit-entry",
+    "exit": 0,
+    "report": {
+      "issues": []
+    },
+    "restored": true
+  }
+]

@@ -1,0 +1,95 @@
+[
+  {
+    "case": "c-sibling-only",
+    "command": "pnpm exec knip --include files,exports,types --no-progress --reporter json",
+    "exit": 0,
+    "report": {
+      "issues": []
+    },
+    "restored": true
+  },
+  {
+    "case": "c-unused-file",
+    "command": "pnpm exec knip --include files,exports,types --no-progress --reporter json",
+    "exit": 1,
+    "report": {
+      "issues": [
+        {
+          "file": "packages/shared/src/unused-probe.ts",
+          "exports": [],
+          "files": [
+            {
+              "name": "packages/shared/src/unused-probe.ts"
+            }
+          ],
+          "types": []
+        }
+      ]
+    },
+    "restored": true
+  },
+  {
+    "case": "c-unused-non-entry-export",
+    "command": "pnpm exec knip --include files,exports,types --no-progress --reporter json",
+    "exit": 1,
+    "report": {
+      "issues": [
+        {
+          "file": "apps/scene/src/geometry.ts",
+          "exports": [
+            {
+              "name": "unusedGeometryValue",
+              "line": 7,
+              "col": 14,
+              "pos": 179
+            }
+          ],
+          "files": [],
+          "types": []
+        }
+      ]
+    },
+    "restored": true
+  },
+  {
+    "case": "c-unused-entry-export-native",
+    "command": "pnpm exec knip --include files,exports,types --no-progress --reporter json",
+    "exit": 0,
+    "report": {
+      "issues": []
+    },
+    "restored": true
+  },
+  {
+    "case": "c-unused-entry-export-strong",
+    "command": "pnpm exec knip --include files,exports,types --no-progress --reporter json --include-entry-exports",
+    "exit": 1,
+    "report": {
+      "issues": [
+        {
+          "file": "packages/shared/src/index.ts",
+          "exports": [
+            {
+              "name": "unusedEntryValue",
+              "line": 9,
+              "col": 14,
+              "pos": 199
+            }
+          ],
+          "files": [],
+          "types": []
+        }
+      ]
+    },
+    "restored": true
+  },
+  {
+    "case": "c-cli-without-script-references",
+    "command": "pnpm exec knip --include files,exports,types --no-progress --reporter json",
+    "exit": 0,
+    "report": {
+      "issues": []
+    },
+    "restored": true
+  }
+]

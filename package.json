@@ -12,7 +12,9 @@
     "format:check": "prettier --check . && pnpm -r run format:check",
     "test": "vitest run --config vitest.root.config.ts && pnpm -r run test",
     "build": "pnpm --filter @trial/web build && pnpm --filter @trial/scene build && pnpm --filter @trial/terminal build && pnpm --filter @trial/desktop build",
-    "check": "pnpm typecheck && pnpm lint && pnpm format:check && pnpm test"
+    "check": "pnpm typecheck && pnpm lint && pnpm format:check && pnpm test",
+    "knip": "knip --include files,exports,types --no-progress",
+    "knip:entry-exports": "knip --include files,exports,types --include-entry-exports --no-progress"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",

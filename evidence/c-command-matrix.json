@@ -1,0 +1,99 @@
+[
+  {
+    "case": "c-zero-files-exports-types",
+    "command": "pnpm",
+    "args": [
+      "exec",
+      "knip",
+      "--include",
+      "files,exports,types",
+      "--no-progress",
+      "--reporter",
+      "json"
+    ],
+    "exit": 1,
+    "signal": null
+  },
+  {
+    "case": "c-minimum-root-config",
+    "command": "pnpm",
+    "args": [
+      "exec",
+      "knip",
+      "--include",
+      "files,exports,types",
+      "--no-progress",
+      "--reporter",
+      "json"
+    ],
+    "exit": 0,
+    "signal": null
+  },
+  {
+    "case": "c-plugin-config-native",
+    "command": "pnpm",
+    "args": [
+      "exec",
+      "knip",
+      "--include",
+      "files,exports,types",
+      "--no-progress",
+      "--reporter",
+      "json"
+    ],
+    "exit": 0,
+    "signal": null
+  },
+  {
+    "case": "c-plugin-config-strong",
+    "command": "pnpm",
+    "args": [
+      "exec",
+      "knip",
+      "--include",
+      "files,exports,types",
+      "--include-entry-exports",
+      "--no-progress",
+      "--reporter",
+      "json"
+    ],
+    "exit": 0,
+    "signal": null
+  },
+  {
+    "case": "c-published-gate",
+    "command": "pnpm",
+    "args": [
+      "--package=@londontypescript/temple-bar@0.0.10",
+      "dlx",
+      "temple-bar",
+      "gate"
+    ],
+    "exit": 1,
+    "signal": null
+  },
+  {
+    "case": "c-configured-published-gate",
+    "command": "pnpm",
+    "args": [
+      "--package=@londontypescript/temple-bar@0.0.10",
+      "dlx",
+      "temple-bar",
+      "gate"
+    ],
+    "exit": 1,
+    "signal": null
+  },
+  {
+    "case": "c-published-unused-file",
+    "command": "pnpm",
+    "args": [
+      "--package=@londontypescript/temple-bar@0.0.10",
+      "dlx",
+      "temple-bar",
+      "gate"
+    ],
+    "exit": 1,
+    "signal": null
+  }
+]
