@@ -1,0 +1,11 @@
+{
+  "published": "0.0.10",
+  "module": "installed dist/judge/lockfile.js",
+  "referenceWidth": 200,
+  "referenceFindings": [],
+  "ordinaryWidth": 80,
+  "ordinaryFindings": [
+    "pnpm-lock.yaml: line 213 on the base branch uses YAML pnpm doesn't write, so the judge can't tell whether it changes temple-bar's entries"
+  ],
+  "retainedUnchanged": true
+}

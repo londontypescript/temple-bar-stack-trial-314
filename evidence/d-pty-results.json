@@ -1,0 +1,40 @@
+[
+  {
+    "command": "env -u CI pnpm exec tsx src/main.tsx",
+    "pty": true,
+    "exit": 1,
+    "sharedText": false
+  },
+  {
+    "command": "env CI=true pnpm exec tsx src/main.tsx",
+    "pty": true,
+    "exit": 1,
+    "sharedText": false
+  },
+  {
+    "command": "env -u CI node dist/main.js",
+    "pty": true,
+    "exit": 0,
+    "sharedText": true
+  },
+  {
+    "command": "env CI=true node dist/main.js",
+    "pty": true,
+    "exit": 0,
+    "sharedText": true
+  },
+  {
+    "command": "env -u CI pnpm exec tsx src/main.tsx",
+    "pty": true,
+    "approvedAccess": true,
+    "exit": 0,
+    "sharedText": true
+  },
+  {
+    "command": "env CI=true pnpm exec tsx src/main.tsx",
+    "pty": true,
+    "approvedAccess": true,
+    "exit": 0,
+    "sharedText": true
+  }
+]

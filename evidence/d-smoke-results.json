@@ -1,0 +1,77 @@
+[
+  {
+    "app": "web",
+    "preview": false,
+    "sharedText": true,
+    "errors": []
+  },
+  {
+    "app": "web",
+    "preview": true,
+    "sharedText": true,
+    "errors": []
+  },
+  {
+    "app": "scene",
+    "preview": false,
+    "sharedText": true,
+    "rendering": {
+      "webgl": true,
+      "geometryWidth": 1.5,
+      "frames": 4
+    },
+    "errors": []
+  },
+  {
+    "app": "scene",
+    "preview": true,
+    "sharedText": true,
+    "rendering": {
+      "webgl": true,
+      "geometryWidth": 1.5,
+      "frames": 3
+    },
+    "errors": []
+  },
+  {
+    "app": "terminal",
+    "built": false,
+    "ci": false,
+    "exit": 0,
+    "sharedText": true
+  },
+  {
+    "app": "terminal",
+    "built": false,
+    "ci": true,
+    "exit": 0,
+    "sharedText": true
+  },
+  {
+    "app": "terminal",
+    "built": true,
+    "ci": false,
+    "exit": 0,
+    "sharedText": true
+  },
+  {
+    "app": "terminal",
+    "built": true,
+    "ci": true,
+    "exit": 0,
+    "sharedText": true
+  },
+  {
+    "app": "desktop",
+    "main": {
+      "title": "Shared TypeScript: 314",
+      "sandboxed": true
+    },
+    "nodeGlobals": {
+      "require": "undefined",
+      "process": "undefined"
+    },
+    "origin": "app://fixture/",
+    "errors": []
+  }
+]
