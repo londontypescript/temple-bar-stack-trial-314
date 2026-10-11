@@ -1,0 +1,137 @@
+{
+  "baseline": "886afea0339988110d18cd12c52f783e5454f6c8",
+  "tool": "@londontypescript/temple-bar@0.0.10",
+  "node": "24.21.0",
+  "pnpm": "10.34.5",
+  "normal_init": {
+    "command": "pnpm exec temple-bar init --create-ruleset",
+    "exit": 0,
+    "tracked_changes": false
+  },
+  "fresh_worktree": {
+    "branch": "codex/protected-stack-control",
+    "post_checkout": "pnpm install --frozen-lockfile",
+    "exit": 0,
+    "hooks": "five unchanged"
+  },
+  "full_protected_gate": {
+    "command": "pnpm gate",
+    "exit": 0,
+    "bootstrap_skips": 0
+  },
+  "rules": [
+    {
+      "type": "deletion",
+      "ruleset_source_type": "Repository",
+      "ruleset_source": "londontypescript/temple-bar-stack-trial-314",
+      "ruleset_id": 24874635
+    },
+    {
+      "type": "non_fast_forward",
+      "ruleset_source_type": "Repository",
+      "ruleset_source": "londontypescript/temple-bar-stack-trial-314",
+      "ruleset_id": 24874635
+    },
+    {
+      "type": "pull_request",
+      "parameters": {
+        "required_approving_review_count": 0,
+        "dismiss_stale_reviews_on_push": false,
+        "required_reviewers": [],
+        "require_code_owner_review": false,
+        "dismissal_restriction": {
+          "enabled": false,
+          "allowed_actors": []
+        },
+        "require_last_push_approval": false,
+        "required_review_thread_resolution": false,
+        "require_extra_approval_for_unattributed_changes": true,
+        "allowed_merge_methods": ["squash"]
+      },
+      "ruleset_source_type": "Repository",
+      "ruleset_source": "londontypescript/temple-bar-stack-trial-314",
+      "ruleset_id": 24874635
+    },
+    {
+      "type": "required_linear_history",
+      "ruleset_source_type": "Repository",
+      "ruleset_source": "londontypescript/temple-bar-stack-trial-314",
+      "ruleset_id": 24874635
+    },
+    {
+      "type": "required_signatures",
+      "ruleset_source_type": "Repository",
+      "ruleset_source": "londontypescript/temple-bar-stack-trial-314",
+      "ruleset_id": 24874635
+    },
+    {
+      "type": "code_scanning",
+      "parameters": {
+        "code_scanning_tools": [
+          {
+            "tool": "CodeQL",
+            "security_alerts_threshold": "high_or_higher",
+            "alerts_threshold": "errors"
+          }
+        ]
+      },
+      "ruleset_source_type": "Repository",
+      "ruleset_source": "londontypescript/temple-bar-stack-trial-314",
+      "ruleset_id": 24874635
+    },
+    {
+      "type": "required_status_checks",
+      "parameters": {
+        "strict_required_status_checks_policy": true,
+        "do_not_enforce_on_create": false,
+        "required_status_checks": [
+          {
+            "context": "temple-bar gate",
+            "integration_id": 15368
+          },
+          {
+            "context": "temple-bar pr-title",
+            "integration_id": 15368
+          }
+        ]
+      },
+      "ruleset_source_type": "Repository",
+      "ruleset_source": "londontypescript/temple-bar-stack-trial-314",
+      "ruleset_id": 24874635
+    },
+    {
+      "type": "required_status_checks",
+      "parameters": {
+        "strict_required_status_checks_policy": true,
+        "do_not_enforce_on_create": false,
+        "required_status_checks": [
+          {
+            "context": "temple-bar judge",
+            "integration_id": 15368
+          }
+        ]
+      },
+      "ruleset_source_type": "Repository",
+      "ruleset_source": "londontypescript/temple-bar-stack-trial-314",
+      "ruleset_id": 24876023
+    }
+  ],
+  "codeql": [
+    {
+      "commit_sha": "886afea0339988110d18cd12c52f783e5454f6c8",
+      "analysis_key": "dynamic/github-code-scanning/codeql:analyze",
+      "error": "",
+      "results_count": 0,
+      "url": "https://api.github.com/repos/londontypescript/temple-bar-stack-trial-314/code-scanning/analyses/1931249873"
+    },
+    {
+      "commit_sha": "2aeb6afa37a57a0ecb442e2cad8e9997f4fe8239",
+      "analysis_key": "dynamic/github-code-scanning/codeql:analyze",
+      "error": "",
+      "results_count": 0,
+      "url": "https://api.github.com/repos/londontypescript/temple-bar-stack-trial-314/code-scanning/analyses/1931221439"
+    }
+  ],
+  "positive_control": "CI/judge/merge pending publication of this ordinary documentation-only PR",
+  "preserved_minimal_fixture": "2cc4d036a06853f2a8026e1beefa782e58d54747"
+}
