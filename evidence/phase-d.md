@@ -62,7 +62,8 @@ All seven controls exit 1 with the responsible smoke assertion/startup diagnosti
 then restore the original source or build file: missing web text; wrong actual
 mesh width; missing Ink output; wrong Electron main value; missing Electron
 renderer module; unresolved Vite startup import; Ink exit timeout. The complete restored smoke
-suite then exits 0. See [probe outcomes](d-smoke-probes.json). Build artifacts
+suite exits 0, and all four terminal variants pass again after the timeout
+control. See [probe outcomes](d-smoke-probes.json). Build artifacts
 mutated only for diagnostic controls were restored byte for byte.
 
 ## Known defects versus stack findings
@@ -84,8 +85,12 @@ separate known-defect status; this phase does not rerun that negative-PR matrix.
 
 ## Remaining bootstrap work
 
-Prepare and review the setup/smoke commit, verify a fresh hook-installed
-worktree, then obtain the required approval before publishing generated
+The signed local setup/smoke baseline passes installed ready. A fresh
+post-checkout hook installs frozen dependencies and its full gate/build pass;
+all four owned loopback ports are released. See
+[fresh/readiness evidence](d-fresh-readiness.json). These are local results.
+
+Obtain the required approval before publishing generated
 AGENTS.md and guarded checking changes. Preserve the existing phase B/C PRs
 and their published history. Land the phase PRs in order; maintainer-owned
 checking/bootstrap merges need concrete approval. Observe actual default-branch
