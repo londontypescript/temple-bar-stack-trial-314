@@ -1,7 +1,9 @@
 # Phase D local verification and bootstrap review
 
-Phase D is in progress: local delivery passes; CI and completed default-branch
-protection have not yet been observed. No trial PR has merged. The minimal
+Phase D is in progress: local delivery passes. Initial CI passes on Linux and
+macOS; Windows fails formatting due to CRLF checkout conversion. The corrected
+bootstrap awaits fresh CI. Completed default-branch protection is not yet
+observed. No trial PR has merged. The minimal
 [fixture](https://github.com/londontypescript/temple-bar-workspace-trial-309/tree/2cc4d036a06853f2a8026e1beefa782e58d54747)
 is preserved; no production Temple Bar or grand-union implementation changed.
 
@@ -88,7 +90,10 @@ separate known-defect status; this phase does not rerun that negative-PR matrix.
 The signed local setup/smoke baseline passes installed ready. A fresh
 post-checkout hook installs frozen dependencies and its full gate/build pass;
 all four owned loopback ports are released. See
-[fresh/readiness evidence](d-fresh-readiness.json). These are local results.
+[fresh/readiness evidence](d-fresh-readiness.json). These are local results. Initial cross-platform CI is retained in
+[Windows checkout evidence](windows-line-endings.md); the corrected bootstrap
+adds a repository-local LF policy, preserving the formatter and all generated
+checking files.
 
 Obtain the required approval before publishing generated
 AGENTS.md and guarded checking changes. Preserve the existing phase B/C PRs

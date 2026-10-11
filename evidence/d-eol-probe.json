@@ -1,0 +1,24 @@
+[
+  {
+    "repositoryPolicy": false,
+    "gitSetting": "command-scoped core.autocrlf=true",
+    "checkoutExit": 0,
+    "agentsCRLF": true,
+    "agentsBytes": 7855,
+    "formatCommand": "prettier --check AGENTS.md scripts/smoke.ts",
+    "formatExit": 1,
+    "formatterDiagnostic": "Checking formatting...\n[warn] AGENTS.md\n[warn] scripts/smoke.ts\n[warn] Code style issues found in 2 files. Run Prettier with --write to fix.",
+    "pngUnchanged": true
+  },
+  {
+    "repositoryPolicy": true,
+    "gitSetting": "command-scoped core.autocrlf=true",
+    "checkoutExit": 0,
+    "agentsCRLF": false,
+    "agentsBytes": 7696,
+    "formatCommand": "prettier --check AGENTS.md scripts/smoke.ts",
+    "formatExit": 0,
+    "formatterDiagnostic": "Checking formatting...\nAll matched files use Prettier code style!",
+    "pngUnchanged": true
+  }
+]
