@@ -1,9 +1,14 @@
 # Phase D local verification and bootstrap review
 
-Phase D is in progress: local delivery passes. Initial CI passes on Linux and
-macOS; Windows fails formatting due to CRLF checkout conversion. The corrected
-bootstrap awaits fresh CI. Completed default-branch protection is not yet
-observed. No trial PR has merged. The minimal
+Phase D is in progress pending the ordinary protected positive-control PR.
+The approved combined entry/setup bootstrap landed in
+[PR 4](https://github.com/londontypescript/temple-bar-stack-trial-314/pull/4)
+as `886afea0339988110d18cd12c52f783e5454f6c8`, after generated gate/title
+and full gate/build CI passed on Linux, macOS and Windows.
+[PR 2](https://github.com/londontypescript/temple-bar-stack-trial-314/pull/2)
+remains closed/unmerged as separate entry-review evidence; the maintainer
+approved the simplest combined bootstrap for this throwaway repo.
+The minimal
 [fixture](https://github.com/londontypescript/temple-bar-workspace-trial-309/tree/2cc4d036a06853f2a8026e1beefa782e58d54747)
 is preserved; no production Temple Bar or grand-union implementation changed.
 
@@ -85,23 +90,38 @@ asset/secure-origin desktop integration. Missing/weakened child scripts,
 unchecked package coverage and blanket workspace YAML guarding retain their
 separate known-defect status; this phase does not rerun that negative-PR matrix.
 
-## Remaining bootstrap work
+## Protected baseline and positive control
 
-The signed local setup/smoke baseline passes installed ready. A fresh
-post-checkout hook installs frozen dependencies and its full gate/build pass;
-all four owned loopback ports are released. See
-[fresh/readiness evidence](d-fresh-readiness.json). These are local results. Initial cross-platform CI is retained in
-[Windows checkout evidence](windows-line-endings.md); the corrected bootstrap
-adds a repository-local LF policy, preserving the formatter and all generated
-checking files.
+After default-branch workflows landed and real CodeQL analysis existed,
+normal `pnpm exec temple-bar init --create-ruleset` exited 0 without tracked
+file changes. It required gate/title checks and CodeQL in the no-bypass
+main ruleset, and the judge in its separate ruleset. Both check requirements
+are strict and bound to GitHub Actions; the judge's standard repository-admin
+PR-only bypass remains as designed. Neither bootstrap merge used a bypass.
+CodeQL analysed both fixture and merged setup main commits with no errors
+and zero results. See [protected baseline evidence](d-protected-baseline.json).
 
-Obtain the required approval before publishing generated
-AGENTS.md and guarded checking changes. Preserve the existing phase B/C PRs
-and their published history. Land the phase PRs in order; maintainer-owned
-checking/bootstrap merges need concrete approval. Observe actual default-branch
-CodeQL and Linux/macOS/Windows gate/build CI, rerun normal init to require the
-checks, and verify a focused positive control through real protected judge/CI.
-Do not disable a rule or bypass readiness to resolve the bootstrap.
+A fresh ordinary control worktree on the merged baseline selected Node
+24.21.0/pnpm 10.34.5. The real post-checkout hook installed frozen dependencies,
+prepare found all five hooks unchanged, and full `pnpm gate` exited 0 with
+no bootstrap skips. This documentation-only update is the approved single
+positive control: it changes neither fixture behavior nor checking machinery.
+Actual protected CI/judge and eligible `temple-bar merge` observations remain
+pending publication of its PR; the milestone completion record will link
+those results rather than pretending this pre-publication report saw them.
 
-Only after those observations or an explicit bounded blocker may phase D be
-recorded complete on the milestone tracker and phase E synthesis advance.
+The larger catalog lockfile passes the real installed protection gate under
+the retained width-200 formatting policy; ordinary width-80 refusal remains
+the separately recorded known parser condition. No check was weakened.
+
+Initial Windows CRLF formatting failed in
+[PR 3](https://github.com/londontypescript/temple-bar-stack-trial-314/pull/3),
+retained closed/unmerged; repository-local LF attributes fixed the fixture
+omission without formatter changes. See [checkout control](windows-line-endings.md).
+The earlier attempted pre-setup entry-PR synchronization was aborted: its
+framework checks passed but the gate correctly rejected missing setup.
+That was an agent sequencing error, not a new Temple Bar implementation defect.
+
+Phase D completes only after the protected positive control and its actual
+CI/judge/CodeQL results are recorded on the milestone tracker. Production
+workspace fixes and packed regression integration remain outside this trial.
